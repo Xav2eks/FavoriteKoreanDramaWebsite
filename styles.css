@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Poppins", sans-serif;
+  --font-accent: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+:root {
+  --font-heading: "Nanum Myeongjo", serif;
+  --font-body: "Nanum Gothic", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f5f5dc;
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.main-container {
+  display: flex;
+}
+
+.left-container {
+  width: 70%;
+  height: auto;
+  background-color: aquamarine;
+}
+
+/* SIDEBAR CSS */
+.right-container {
+  width: 30%;
+  height: auto;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-header {
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+}
+
+#addBtn {
+  padding: 0.25rem 1rem;
+  width: fit-content;
+  align-self: center;
+  background-color: rgb(145, 247, 77);
+  font-weight: bold;
+}
+
+/* SIDEBAR TITLE CSS */
+.sidebar-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#input-title {
+  width: 80%;
+}
+
+.sidebar-title > label {
+  font-weight: bold;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+/* SIDEBAR DESCRIPTION CSS */
+.sidebar-description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#input-description {
+  padding: 0.75rem 1rem;
+  width: 80%;
+}
+
+.sidebar-description > label {
+  font-weight: bold;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+/* SIDEBAR IMAGE CSS */
+.sidebar-image {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#input-image {
+  width: 80%;
+}
+
+.sidebar-image > label {
+  font-weight: bold;
+  font-family: "Nanum Gothic", sans-serif;
+}
