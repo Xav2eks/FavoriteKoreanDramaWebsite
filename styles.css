@@ -77,6 +77,11 @@ header {
   cursor: pointer;
 }
 
+#addBtn:hover, .add-to-cart-btn:hover {
+  background-color: rgb(186, 255, 158);
+  color: black;
+}
+
 /* SIDEBAR TITLE CSS */
 .sidebar-title {
   display: flex;
@@ -154,7 +159,7 @@ header {
   background: white;
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -204,4 +209,9 @@ header {
   background-color: rgb(255, 66, 66);
   font-weight: bold;
   cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: black;
+  background-color: rgb(255, 187, 187);
 }
