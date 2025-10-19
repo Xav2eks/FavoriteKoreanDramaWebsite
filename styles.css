@@ -20,10 +20,11 @@
 }
 
 header {
-  background-color: #badfdb;
+  background-color: #fcf9ea;
   padding: 1rem 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+  border-bottom: 2px solid #b1aaaa;
 }
 
 .main-container {
@@ -33,14 +34,14 @@ header {
 .left-container {
   width: 80%;
   height: auto;
-  background-color: #fcf9ea;
+  background-color: #badfdb;
 }
 
 /* SIDEBAR CSS */
 .right-container {
   width: 20%;
   height: auto;
-  background-color: #fcf9ea;
+  background-color: #badfdb;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -48,7 +49,7 @@ header {
 
 .sidebar-header {
   text-align: center;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: bold;
   padding-top: 12px;
 }
@@ -75,7 +76,7 @@ header {
 
 .sidebar-title > label {
   font-weight: bold;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* SIDEBAR DESCRIPTION CSS */
@@ -92,7 +93,7 @@ header {
 
 .sidebar-description > label {
   font-weight: bold;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* SIDEBAR IMAGE CSS */
@@ -108,13 +109,13 @@ header {
 
 .sidebar-image > label {
   font-weight: bold;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* SIDEBAR CART CSS */
 .sidebar-cart > p {
   font-weight: bold;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .left-container {
@@ -146,10 +147,12 @@ header {
 
 .drama-card h3 {
   color: #333;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .drama-card p {
-  color: #666;
+  color: #000000;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .btn-container {
