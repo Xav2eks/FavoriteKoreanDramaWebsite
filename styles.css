@@ -20,7 +20,7 @@
 }
 
 header {
-  background-color: #f5f5dc;
+  background-color: #badfdb;
   padding: 1rem 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -31,16 +31,16 @@ header {
 }
 
 .left-container {
-  width: 70%;
+  width: 80%;
   height: auto;
-  background-color: aquamarine;
+  background-color: #fcf9ea;
 }
 
 /* SIDEBAR CSS */
 .right-container {
-  width: 30%;
+  width: 20%;
   height: auto;
-  background-color: aliceblue;
+  background-color: #fcf9ea;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -50,6 +50,7 @@ header {
   text-align: center;
   font-family: "Nanum Gothic", sans-serif;
   font-weight: bold;
+  padding-top: 12px;
 }
 
 #addBtn {
@@ -58,6 +59,7 @@ header {
   align-self: center;
   background-color: rgb(145, 247, 77);
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* SIDEBAR TITLE CSS */
@@ -107,4 +109,70 @@ header {
 .sidebar-image > label {
   font-weight: bold;
   font-family: "Nanum Gothic", sans-serif;
+}
+
+/* SIDEBAR CART CSS */
+.sidebar-cart > p {
+  font-weight: bold;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.left-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.drama-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.drama-card img {
+  width: 200px;
+  height: 200px;
+  background-color: #ffa4a4;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.drama-card h3 {
+  color: #333;
+}
+
+.drama-card p {
+  color: #666;
+}
+
+.btn-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.add-to-cart-btn {
+  padding: 0.25rem 0.25rem;
+  width: fit-content;
+  align-self: center;
+  background-color: rgb(145, 247, 77);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.remove-btn {
+  padding: 0.25rem 0.25rem;
+  width: fit-content;
+  align-self: center;
+  background-color: rgb(255, 66, 66);
+  font-weight: bold;
+  cursor: pointer;
 }
