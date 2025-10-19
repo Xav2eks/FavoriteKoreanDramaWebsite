@@ -19,6 +19,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #badfdb;
+}
+
 header {
   background-color: #fcf9ea;
   padding: 1rem 2rem;
@@ -41,7 +45,9 @@ header {
 .right-container {
   width: 20%;
   height: auto;
-  background-color: #badfdb;
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -72,6 +78,12 @@ header {
 
 #input-title {
   width: 80%;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+  background-color: white;
 }
 
 .sidebar-title > label {
@@ -87,8 +99,14 @@ header {
 }
 
 #input-description {
-  padding: 0.75rem 1rem;
   width: 80%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+  background-color: white;
 }
 
 .sidebar-description > label {
@@ -105,7 +123,14 @@ header {
 
 #input-image {
   width: 80%;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+  background-color: white;
 }
+
 
 .sidebar-image > label {
   font-weight: bold;
@@ -147,12 +172,13 @@ header {
 
 .drama-card h3 {
   color: #333;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .drama-card p {
   color: #000000;
   font-family: "Cormorant Garamond", serif;
+  text-align: justify;
 }
 
 .btn-container {
