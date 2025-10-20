@@ -39,6 +39,8 @@ addBtn.addEventListener("click", function () {
 
   const addToCartBtn = dramaCard.querySelector(".add-to-cart-btn");
   addToCartBtn.addEventListener("click", function () {
+    totalItems++;
+    cartTotal.innerText = `Total Items: ${totalItems}`;
     const dramaCart = document.createElement("div");
     dramaCart.className = "drama-cart";
 
@@ -52,6 +54,8 @@ addBtn.addEventListener("click", function () {
     const removeBtn = dramaCart.querySelector(".delete-btn");
     removeBtn.addEventListener("click", function () {
       dramaCart.remove();
+      totalItems--;
+      cartTotal.innerText = `Total Items: ${totalItems}`;
     });
   });
 });
