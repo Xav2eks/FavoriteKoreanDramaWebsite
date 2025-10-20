@@ -3,7 +3,8 @@ const inputTitle = document.getElementById("input-title");
 const inputDescription = document.getElementById("input-description");
 const inputImage = document.getElementById("input-image");
 const leftContainer = document.querySelector(".left-container");
-const cartTotal = document.querySelector(".sidebar-cart p");
+const cartTotal = document.querySelector(".total-items");
+const cartList = document.querySelector(".cart-list");
 
 let totalItems = 0;
 
@@ -34,5 +35,23 @@ addBtn.addEventListener("click", function () {
   const removeBtn = dramaCard.querySelector(".remove-btn");
   removeBtn.addEventListener("click", function () {
     dramaCard.remove();
+  });
+
+  const addToCartBtn = dramaCard.querySelector(".add-to-cart-btn");
+  addToCartBtn.addEventListener("click", function () {
+    const dramaCart = document.createElement("div");
+    dramaCart.className = "drama-cart";
+
+    dramaCart.innerHTML = `
+      <h4>${title}</h4>
+      <button class="delete-btn">DELETE</button>
+    `;
+
+    cartList.appendChild(dramaCart);
+
+    const removeBtn = dramaCart.querySelector(".delete-btn");
+    removeBtn.addEventListener("click", function () {
+      dramaCart.remove();
+    });
   });
 });

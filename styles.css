@@ -49,7 +49,11 @@ header {
 /* SIDEBAR CSS */
 .right-container {
   width: 20%;
-  height: auto;
+}
+
+.inner-right-container {
+  width: 20%;
+  height: calc(100vh - 96px);
   background-color: white;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -57,13 +61,15 @@ header {
   flex-direction: column;
   gap: 12px;
   position: fixed;
-  right: 0;
+  right: 10;
+  padding: 12px;
+  overflow-y: auto;
   margin-top: 16px;
 }
 
 .sidebar-header {
   text-align: center;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   padding-top: 12px;
 }
@@ -77,7 +83,8 @@ header {
   cursor: pointer;
 }
 
-#addBtn:hover, .add-to-cart-btn:hover {
+#addBtn:hover,
+.add-to-cart-btn:hover {
   background-color: rgb(186, 255, 158);
   color: black;
 }
@@ -214,4 +221,30 @@ header {
 .remove-btn:hover {
   color: black;
   background-color: rgb(255, 187, 187);
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.delete-btn {
+  padding: 0.25rem 0.5rem; 
+  width: fit-content;
+  background-color: rgb(255, 66, 66);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.drama-cart {
+  font-family: "Cormorant Garamond", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
 }
