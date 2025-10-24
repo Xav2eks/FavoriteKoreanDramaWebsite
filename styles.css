@@ -231,7 +231,7 @@ header {
 }
 
 .delete-btn {
-  padding: 0.25rem 0.5rem; 
+  padding: 0.25rem 0.5rem;
   width: fit-content;
   background-color: rgb(255, 66, 66);
   font-weight: bold;
@@ -247,4 +247,29 @@ header {
   gap: 8px;
   padding: 0.5rem;
   border-bottom: 1px solid #e0e0e0;
+}
+
+.checkout-btn {
+  padding: 0.25rem 1rem;
+  width: fit-content;
+  align-self: center;
+  background-color: rgb(145, 247, 77);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear-btn {
+  padding: 0.25rem 1rem;
+  width: fit-content;
+  align-self: center;
+  background-color: rgb(109, 101, 101);
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.checkout-container {
+  display: flex;
+  gap: 12px;
+  margin: 0 auto;
 }

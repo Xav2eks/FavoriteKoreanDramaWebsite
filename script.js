@@ -5,6 +5,8 @@ const inputImage = document.getElementById("input-image");
 const leftContainer = document.querySelector(".left-container");
 const cartTotal = document.querySelector(".total-items");
 const cartList = document.querySelector(".cart-list");
+const checkoutBtn = document.querySelector(".checkout-btn");
+const clearCart = document.querySelector(".clear-btn");
 
 let totalItems = 0;
 
@@ -58,4 +60,18 @@ addBtn.addEventListener("click", function () {
       cartTotal.innerText = `Total Items: ${totalItems}`;
     });
   });
+});
+
+checkoutBtn.addEventListener("click", function () {
+  if (totalItems != 0) {
+    alert("Done Checkout! Check your folder to see your saved drama.");
+  } else {
+    alert("You have no items in your cart, please add to cart!");
+  }
+});
+
+clearCart.addEventListener("click", function () {
+  cartList.innerHTML = ``;
+  totalItems = 0;
+  cartTotal.innerText = `Total Items: ${totalItems}`;
 });
