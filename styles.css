@@ -19,7 +19,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -95,7 +96,7 @@ header {
 }
 
 #addBtn:hover,
-.add-to-cart-btn:hover {
+.add-to-favorites-btn:hover {
   background-color: rgb(186, 255, 158);
   color: black;
 }
@@ -211,7 +212,7 @@ header {
   margin-top: auto;
 }
 
-.add-to-cart-btn {
+.add-to-favorites-btn {
   padding: 0.25rem 0.25rem;
   width: fit-content;
   align-self: center;
@@ -260,7 +261,7 @@ header {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.checkout-btn {
+.save-btn {
   padding: 0.25rem 1rem;
   width: fit-content;
   align-self: center;
@@ -279,7 +280,7 @@ header {
   color: white;
 }
 
-.checkout-container {
+.favorites-container {
   display: flex;
   gap: 12px;
   margin: 0 auto;

@@ -5,7 +5,7 @@ const inputImage = document.getElementById("input-image");
 const leftContainer = document.querySelector(".left-container");
 const cartTotal = document.querySelector(".total-items");
 const cartList = document.querySelector(".cart-list");
-const checkoutBtn = document.querySelector(".checkout-btn");
+const saveBtn = document.querySelector(".save-btn");
 const clearCart = document.querySelector(".clear-btn");
 
 let totalItems = 0;
@@ -23,7 +23,7 @@ addBtn.addEventListener("click", function () {
     <h3>${title}</h3>
     <p>${description}</p>
     <div class="btn-container">
-        <button class="add-to-cart-btn">ADD TO CART</button>
+        <button class="add-to-favorites-btn">ADD TO FAVORITES</button>
         <button class="remove-btn">REMOVE</button>
     </div>
   `;
@@ -39,8 +39,8 @@ addBtn.addEventListener("click", function () {
     dramaCard.remove();
   });
 
-  const addToCartBtn = dramaCard.querySelector(".add-to-cart-btn");
-  addToCartBtn.addEventListener("click", function () {
+  const addToFavorites = dramaCard.querySelector(".add-to-favorites-btn");
+  addToFavorites.addEventListener("click", function () {
     totalItems++;
     cartTotal.innerText = `Total Items: ${totalItems}`;
     const dramaCart = document.createElement("div");
@@ -62,7 +62,7 @@ addBtn.addEventListener("click", function () {
   });
 });
 
-checkoutBtn.addEventListener("click", function () {
+saveBtn.addEventListener("click", function () {
   if (totalItems != 0) {
     alert("Done Checkout! Check your folder to see your saved drama.");
   } else {
