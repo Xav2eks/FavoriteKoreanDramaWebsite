@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Poppins", sans-serif;
+  --font-accent: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+:root {
+  --font-heading: "Nanum Myeongjo", serif;
+  --font-body: "Nanum Gothic", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #badfdb;
+}
+
+header {
+  background-color: #fcf9ea;
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #b1aaaa;
+  position: static;
+  display: flex;
+}
+
+#header-name {
+  text-decoration: none;
+  color: black;
+}
+
+#home-btn {
+  text-decoration: none;
+  color: black;
+}
+
+.header-btn-container {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: 4%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: auto;
+  background-color: #fcf9ea;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+  font-family: "Poppins", sans-serif;
+  border-top: 2px solid #b1aaaa;
+}
+
+.home-container {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  gap: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  gap: 24px;
+}
+
+.home-content h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.home-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image img {
+  width: 80%;
+  height: 100%;
+  display: block;
+}
+
+.explore-btn {
+  width: fit-content;
+  padding: 12px 24px;
+  background-color: #65ff8c;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #4ed978;
+}
