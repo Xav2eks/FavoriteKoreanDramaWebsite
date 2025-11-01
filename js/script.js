@@ -11,55 +11,60 @@ const clearCart = document.querySelector(".clear-btn");
 let totalItems = 0;
 
 addBtn.addEventListener("click", function () {
-  const title = inputTitle.value;
-  const description = inputDescription.value;
-  const imageUrl = inputImage.value;
 
-  const dramaCard = document.createElement("div");
-  dramaCard.className = "drama-card";
+  if (inputTitle.value === "" || inputDescription.value === "" || inputImage.value === "") {
+    alert("Please fill in all fields before adding a drama.");
+  } else {
+    const title = inputTitle.value;
+    const description = inputDescription.value;
+    const imageUrl = inputImage.value;
 
-  dramaCard.innerHTML = `
-    <img src="${imageUrl}" alt="${title}">
-    <h3>${title}</h3>
-    <p>${description}</p>
-    <div class="btn-container">
-        <button class="add-to-favorites-btn">ADD TO FAVORITES</button>
-        <button class="remove-btn">REMOVE</button>
-    </div>
-  `;
+    const dramaCard = document.createElement("div");
+    dramaCard.className = "drama-card";
 
-  leftContainer.appendChild(dramaCard);
-
-  inputTitle.value = "";
-  inputDescription.value = "";
-  inputImage.value = "";
-
-  const removeBtn = dramaCard.querySelector(".remove-btn");
-  removeBtn.addEventListener("click", function () {
-    dramaCard.remove();
-  });
-
-  const addToFavorites = dramaCard.querySelector(".add-to-favorites-btn");
-  addToFavorites.addEventListener("click", function () {
-    totalItems++;
-    cartTotal.innerText = `Total Items: ${totalItems}`;
-    const dramaCart = document.createElement("div");
-    dramaCart.className = "drama-cart";
-
-    dramaCart.innerHTML = `
-      <h4>${title}</h4>
-      <button class="delete-btn">DELETE</button>
+    dramaCard.innerHTML = `
+      <img src="${imageUrl}" alt="${title}">
+      <h3>${title}</h3>
+      <p>${description}</p>
+      <div class="btn-container">
+          <button class="add-to-favorites-btn">ADD TO FAVORITES</button>
+          <button class="remove-btn">REMOVE</button>
+      </div>
     `;
 
-    cartList.appendChild(dramaCart);
+    leftContainer.appendChild(dramaCard);
 
-    const removeBtn = dramaCart.querySelector(".delete-btn");
+    inputTitle.value = "";
+    inputDescription.value = "";
+    inputImage.value = "";
+
+    const removeBtn = dramaCard.querySelector(".remove-btn");
     removeBtn.addEventListener("click", function () {
-      dramaCart.remove();
-      totalItems--;
-      cartTotal.innerText = `Total Items: ${totalItems}`;
+      dramaCard.remove();
     });
-  });
+
+    const addToFavorites = dramaCard.querySelector(".add-to-favorites-btn");
+    addToFavorites.addEventListener("click", function () {
+      totalItems++;
+      cartTotal.innerText = `Total Items: ${totalItems}`;
+      const dramaCart = document.createElement("div");
+      dramaCart.className = "drama-cart";
+
+      dramaCart.innerHTML = `
+        <h4>${title}</h4>
+        <button class="remove-btn">DELETE</button>
+      `;
+
+      cartList.appendChild(dramaCart);
+
+      const removeBtn = dramaCart.querySelector(".remove-btn");
+      removeBtn.addEventListener("click", function () {
+        dramaCart.remove();
+        totalItems--;
+        cartTotal.innerText = `Total Items: ${totalItems}`;
+      });
+    });
+  }
 });
 
 saveBtn.addEventListener("click", function () {
