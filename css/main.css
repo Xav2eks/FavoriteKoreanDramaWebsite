@@ -36,7 +36,9 @@ header {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   border-bottom: 2px solid #b1aaaa;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 header img {
@@ -46,6 +48,28 @@ header img {
 #header-name {
   text-decoration: none;
   color: black;
+}
+
+#header-name:hover {
+  text-decoration: underline;
+  color: rgb(161, 161, 161);
+}
+
+#header-about {
+  text-decoration: none;
+  color: black;
+}
+
+#header-about:hover {
+  text-decoration: underline;
+  color: rgb(161, 161, 161);
+}
+
+.menu-container {
+  position: absolute;
+  right: 8rem;
+  display: flex;
+  gap: 2rem;
 }
 
 #home-btn {
@@ -115,7 +139,7 @@ header img {
   color: black;
 }
 
-/* SIDEBAR TITLE CSS */
+/* SIDEBAR TAYTOL CSS */
 .sidebar-title {
   display: flex;
   flex-direction: column;
@@ -285,6 +309,11 @@ header img {
   cursor: pointer;
 }
 
+.save-btn:hover {
+  background-color: rgb(186, 255, 158);
+  color: black;
+}
+
 .clear-btn {
   padding: 0.25rem 1rem;
   width: fit-content;
@@ -293,6 +322,11 @@ header img {
   font-weight: bold;
   cursor: pointer;
   color: white;
+}
+
+.clear-btn:hover {
+  color: red;
+  background-color: rgb(190, 185, 185);
 }
 
 .favorites-container {
