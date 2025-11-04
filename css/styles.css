@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap");
 
-:root {
-  --font-heading: "Cormorant Garamond", serif;
-  --font-body: "Poppins", sans-serif;
-  --font-accent: "Poppins", sans-serif;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Gothic:wght@400;700;800&display=swap");
-
-:root {
-  --font-heading: "Nanum Myeongjo", serif;
-  --font-body: "Nanum Gothic", sans-serif;
-}
 
 * {
   box-sizing: border-box;
