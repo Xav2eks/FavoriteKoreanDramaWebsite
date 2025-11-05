@@ -80,7 +80,6 @@ header img {
   padding: 1rem 1rem 1rem 1rem;
 }
 
-/* SIDEBAR CSS */
 .right-container {
   width: 20%;
 }
@@ -115,6 +114,7 @@ header img {
   background-color: rgb(145, 247, 77);
   font-weight: bold;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .cart-img {
@@ -128,7 +128,6 @@ header img {
   color: black;
 }
 
-/* SIDEBAR TAYTOL CSS */
 .sidebar-title {
   display: flex;
   flex-direction: column;
@@ -150,7 +149,6 @@ header img {
   font-family: "Cormorant Garamond", serif;
 }
 
-/* SIDEBAR DESCRIPTION CSS */
 .sidebar-description {
   display: flex;
   flex-direction: column;
@@ -173,7 +171,6 @@ header img {
   font-family: "Cormorant Garamond", serif;
 }
 
-/* SIDEBAR IMAGE CSS */
 .sidebar-image {
   display: flex;
   flex-direction: column;
@@ -195,7 +192,6 @@ header img {
   font-family: "Cormorant Garamond", serif;
 }
 
-/* SIDEBAR CART CSS */
 .sidebar-cart > p {
   font-weight: bold;
   font-family: "Cormorant Garamond", serif;
@@ -246,6 +242,7 @@ header img {
   background-color: rgb(145, 247, 77);
   font-weight: bold;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .remove-btn {
@@ -256,6 +253,7 @@ header img {
   font-weight: bold;
   cursor: pointer;
   color: white;
+  border-radius: 4px;
 }
 
 .remove-btn:hover {
@@ -268,15 +266,6 @@ header img {
   flex-direction: column;
   gap: 8px;
   margin-left: 16px;
-}
-
-.remove-btn {
-  padding: 0.25rem 0.5rem;
-  width: fit-content;
-  background-color: rgb(255, 66, 66);
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 12px;
 }
 
 .drama-cart {
@@ -296,6 +285,7 @@ header img {
   background-color: rgb(145, 247, 77);
   font-weight: bold;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .save-btn:hover {
@@ -311,6 +301,7 @@ header img {
   font-weight: bold;
   cursor: pointer;
   color: white;
+  border-radius: 4px;
 }
 
 .clear-btn:hover {
