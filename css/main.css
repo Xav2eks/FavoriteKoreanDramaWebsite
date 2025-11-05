@@ -26,8 +26,8 @@ header {
   font-weight: bold;
   border-bottom: 2px solid #b1aaaa;
   display: flex;
-  justify-content: center;
-  position: relative;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header img {
@@ -37,6 +37,7 @@ header img {
 #header-name {
   text-decoration: none;
   color: black;
+  margin: 0 auto;
 }
 
 #header-name:hover {
