@@ -89,7 +89,18 @@ saveBtn.addEventListener("click", function () {
 });
 
 clearCart.addEventListener("click", function () {
-  cartList.innerHTML = ``;
-  totalItems = 0;
-  cartTotal.innerText = `Total Items: ${totalItems}`;
+  if (totalItems != 0) {
+    let confirmWindow = confirm(
+      "Are you sure want to clear your favorites cart?"
+    );
+    if (confirmWindow == true) {
+      cartList.innerHTML = ``;
+      totalItems = 0;
+      cartTotal.innerText = `Total Items: ${totalItems}`;
+    } else {
+      alert("Cancelled successfully!");
+    }
+  } else {
+    alert("You do not have any items in your cart!");
+  }
 });
