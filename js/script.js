@@ -61,7 +61,6 @@ addBtn.addEventListener("click", function () {
 
       if (alreadyExists) {
         alert(title + " is already in your favorites");
-        return;
       } else {
         totalItems++;
         cartTotal.innerText = "Total Items: " + totalItems;
