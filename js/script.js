@@ -47,25 +47,42 @@ addBtn.addEventListener("click", function () {
     });
 
     const addToFavorites = dramaCard.querySelector(".add-to-favorites-btn");
+
     addToFavorites.addEventListener("click", function () {
-      totalItems++;
-      cartTotal.innerText = `Total Items: ${totalItems}`;
-      const dramaCart = document.createElement("div");
-      dramaCart.className = "drama-cart";
+      const existingItems = cartList.querySelectorAll(".cart-title");
+      let alreadyExists = false;
 
-      dramaCart.innerHTML = `
-        <h4>${title}</h4>
+      for (let i = 0; i < existingItems.length; i++) {
+        if (existingItems[i].textContent === title) {
+          alreadyExists = true;
+          break;
+        }
+      }
+
+      if (alreadyExists) {
+        alert(title + " is already in your favorites");
+        return;
+      } else {
+        totalItems++;
+        cartTotal.innerText = "Total Items: " + totalItems;
+
+        const dramaCart = document.createElement("div");
+        dramaCart.className = "drama-cart";
+
+        dramaCart.innerHTML = `
+        <h4 class="cart-title">${title}</h4>
         <button class="remove-btn">DELETE</button>
-      `;
+        `;
 
-      cartList.appendChild(dramaCart);
+        cartList.appendChild(dramaCart);
 
-      const removeBtn = dramaCart.querySelector(".remove-btn");
-      removeBtn.addEventListener("click", function () {
-        dramaCart.remove();
-        totalItems--;
-        cartTotal.innerText = `Total Items: ${totalItems}`;
-      });
+        const removeBtn = dramaCart.querySelector(".remove-btn");
+        removeBtn.addEventListener("click", function () {
+          dramaCart.remove();
+          totalItems--;
+          cartTotal.innerText = "Total Items: " + totalItems;
+        });
+      }
     });
   }
 });
